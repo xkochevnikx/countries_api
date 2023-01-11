@@ -7,10 +7,30 @@ import { ALL_CONTRIES } from "../components/Config/Config";
 import Card from "../components/Card/Card";
 import List from "../components/List/List";
 
-const HomePages = () => {
-  const [countries, setContries] = useState([]);
+const HomePages = ({ countries, setContries }) => {
+  const [filterCountries, setFilterContries] = useState(countries);
 
+  //? механизм фильтрации тут такой - создаеём функцию которую передаём в компонет controls. вызываем её там при изменении поисковой строки или региона и возвращаем сюда. тут она спредит массив со странами и по критериям фильтрует его перезаписывая data. потом полученный data записываем в стейт и отрисовываем
+  const handleSearch = (search, region) => {
+    let data = [...countries];
+
+    if (region) {
+      data = data.filter(item => item.region.includes(region));
+    }
+
+    if (search) {
+      data = data.filter(item =>
+        item.name.toLowerCase().includes(search.toLowerCase())
+      );
+    }
+
+    setFilterContries(data);
+  };
+
+  //? навигейт тут для перехода с карточки на отдельную страницу details
   const navigate = useNavigate();
+
+  //? при переходе на homepage срабатывает useEffect если в стейте countries проверяем если длинна массива null то отрабатывает запрос  на сервер. если нет то идёт отрисовка того что уже есть в стейте
 
   useEffect(() => {
     if (!countries.lenght)
@@ -19,11 +39,15 @@ const HomePages = () => {
       });
   }, []);
 
+  useEffect(() => {
+    handleSearch();
+  }, [countries]);
+
   return (
     <>
-      <Controls />
+      <Controls onSearch={handleSearch} />
       <List>
-        {countries.map(c => {
+        {filterCountries.map(c => {
           const countryInfo = {
             img: c.flags.png,
             name: c.name,

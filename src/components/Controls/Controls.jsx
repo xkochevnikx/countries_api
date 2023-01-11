@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { CustomSelect } from "../UI/CustomSelect/CustomSelect";
 import Search from "../UI/Search/Search";
@@ -16,16 +16,24 @@ const Wrapper = styled.div`
 `;
 
 const options = [
-  { value: "Ukraine", label: "Ukraine" },
-  { value: "Ingermanland", label: "Ingermanland" },
-  { value: "Kyrgystan", label: "Kyrgystan" },
+  { value: "Asia", label: "Asia" },
+  { value: "Europe", label: "Europe" },
+  { value: "Americas", label: "Americas" },
+  { value: "Oceania", label: "Oceania" },
+  { value: "Africa", label: "Africa" },
 ];
-const Controls = () => {
+const Controls = ({ onSearch }) => {
   const [search, setSearch] = useState("");
   const [region, setRegion] = useState("");
+
+  useEffect(() => {
+    const regionValue = region?.value || " ";
+    onSearch(search, regionValue);
+  }, [search, region]);
+
   return (
     <Wrapper>
-      <Search />
+      <Search search={search} setSearch={setSearch} />
       <CustomSelect
         options={options}
         placeholder="Filter by region"
