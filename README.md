@@ -22,11 +22,9 @@
 
 ### Демонстрация интерфейса
 
-![Alt-домашняя](https://photos.app.goo.gl/2XCbKbpPWMgoAUmHA) 
-
-![Alt-детальная](https://i.postimg.cc/6qRkxZZG/screencapture-localhost-3000-country-Denmark-2023-04-16-17-47-13.png) 
-![Alt-поиск](https://i.postimg.cc/J0wFxhF7/countries2.png)  <br/>
-
+<a href="https://ibb.co/RYJhJB7"><img src="https://i.ibb.co/tQ1Z1x3/coutries1.png" alt="coutries1" border="0"></a>
+<a href="https://ibb.co/Jd29W2Z"><img src="https://i.ibb.co/ky0tV0Z/countries2.png" alt="countries2" border="0"></a>
+<a href="https://ibb.co/wMs91P0"><img src="https://i.ibb.co/4Pd6xXm/screencapture-localhost-3000-country-Denmark-2023-04-16-17-47-13.png" alt="screencapture-localhost-3000-country-Denmark-2023-04-16-17-47-13" border="0"></a>
 
 ### Установка
 Для установки и запуска проекта, необходим [NodeJS](https://nodejs.org) v8+.
