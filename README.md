@@ -22,7 +22,7 @@
 
 ### Демонстрация интерфейса
 
-![Alt-домашняя](https://i.postimg.cc/KzWqzYbr/coutries1.png) 
+![Alt-домашняя](https://freeimage.host/i/HvwPkVs) 
 ![Alt-детальная](https://i.postimg.cc/6qRkxZZG/screencapture-localhost-3000-country-Denmark-2023-04-16-17-47-13.png) 
 ![Alt-поиск](https://i.postimg.cc/J0wFxhF7/countries2.png)  <br/>
 
