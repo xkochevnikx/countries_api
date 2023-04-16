@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# Страница поиска стран
+Сервис выводит на страницу список стран. Приложение получает данные с https://restcountries.com/ <br/>
+Есть возможность детального просмотра информации о стране.  <br/>
+Реализован функционал фильтрации по регионам и поиска по названию. <br/>
+Приложение имеет светлую и тёмную тему, реализованную через изменение атрибута у body
+Тут я познакомился с библиотекой Styled components и сделал несколько переиспольхуемых UI компонентов.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## О приложении
+### Технологии
+- React
+- React Router DOM
+- React-select
+- Axios
+- Styled components
+- 
+### Интерфейс
+Веб-приложение, c оптимизацией для мобильных устройств
 
-## Available Scripts
+### Функционал
+- В хедере находиться навигация на домашнюю страницу и иконка переключения темы. <br/>
+- На домашней странице сверху отображается функционал поиска и сортировки по регионам и далее выводится список стран. При переходе на конкретную страну открывается страница её детального описания.
 
-In the project directory, you can run:
+### Демонстрация интерфейса
 
-### `npm start`
+![Alt-домашняя](https://i.postimg.cc/KzWqzYbr/coutries1.png) 
+![Alt-детальная](https://i.postimg.cc/6qRkxZZG/screencapture-localhost-3000-country-Denmark-2023-04-16-17-47-13.png) 
+![Alt-поиск](https://i.postimg.cc/J0wFxhF7/countries2.png)  <br/>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Установка
+Для установки и запуска проекта, необходим [NodeJS](https://nodejs.org) v8+.
 
-### `npm test`
+### Установка зависимостей
+Для установки зависимостей, выполните команду:
+```sh
+$ npm i
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Запуск Development сервера
+Чтобы запустить сервер для разработки, выполните команду:
+```sh
+npm start
+```
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Команда проекта
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [Святослав Деев](https://github.com/xkochevnikx) — Front-End Engineer
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
