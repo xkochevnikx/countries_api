@@ -22,7 +22,7 @@
 
 ### Демонстрация интерфейса
 
-![Alt-домашняя](<a href="https://www.imagevenue.com/ME1691KC" target="_blank"><img src="https://cdn-thumbs.imagevenue.com/02/27/5a/ME1691KC_t.png" alt="coutries1.png"/></a>) 
+![Alt-домашняя](https://photos.app.goo.gl/2XCbKbpPWMgoAUmHA) 
 ![Alt-детальная](https://i.postimg.cc/6qRkxZZG/screencapture-localhost-3000-country-Denmark-2023-04-16-17-47-13.png) 
 ![Alt-поиск](https://i.postimg.cc/J0wFxhF7/countries2.png)  <br/>
 
